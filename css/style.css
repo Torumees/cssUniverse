@@ -1,0 +1,73 @@
+:root {
+    --dark-color: rgb(194, 112, 4);
+    --media-color: rgba(179, 110, 19, 0.5);
+    --light-color:rgba(230, 165, 81, 0.4);
+    --text-color:rgb(241, 210, 170);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, var(--media-color), var(--light-color)), 
+    url("../img/pic.jpg");
+    background-size: cover;
+    background-position: right;
+    clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 6%;
+    right: 3%;
+}
+
+.logo {
+    height: 1.7rem;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.3rem;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
