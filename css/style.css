@@ -71,3 +71,57 @@ body {
         opacity: 1;
     }
 }
+
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    width: 10rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border: 4px solid var(--light-color);
+    padding: 1rem;
+    margin: 1rem;    
+    animation-name: learnMore;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes learnMore {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
