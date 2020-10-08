@@ -161,6 +161,7 @@ body {
 .row {
     max-width: 114rem;
     margin: 0 auto;
+    color: var(--text-color);
 }
 
 .row:after {
@@ -207,4 +208,33 @@ body {
 .btn-text:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0);
+}
+
+.composition {
+    position: relative;
+}
+
+.composition_photo {
+    width: 35%;
+    box-shadow: 0 1.5rem 4rem rgb(0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    outline-offset: 2rem;
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+.compostion__photo--p1 {
+    left: 0;
+    top: -2rem;
+}
+
+.compostion__photo--p2 {
+    right: 10rem;
+    top: 2rem;
+}
+
+.compostion__photo--p3 {
+    left: 20%;
+    top: 10rem;
 }
